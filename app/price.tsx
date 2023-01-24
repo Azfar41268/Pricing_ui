@@ -13,19 +13,19 @@ export const ListItem= (props: StackProps) => {
 
 export default function Pricing() {
     return(
-        <Box mb="3.125rem" maxW="62.125rem" margin="auto" mt="-15.625rem" borderRadius="0.75rem" overflow="hidden" boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)">
+        <Box as="section" maxW="62.125rem" margin="auto" mt="-15.625rem" borderRadius="0.75rem" overflow="hidden" boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)">
             <Flex bg="white" direction={["column", "column", "row"]}>
-                <Box bg="#F0EAFB" p="3.75rem">
-                    <Text color="black" textAlign="center" fontSize="1.5rem" fontWeight="extrabold">
+                <Box bg="#F0EAFB" p="3.75rem" textAlign="center">
+                    <Text color="black" fontSize="1.5rem" fontWeight="extrabold">
                         Premium PRO
                     </Text>
-                    <Heading color="black" mt="1.5rem" textAlign="center" fontSize="3.75rem" fontWeight="extrabold" lineHeight="3.75rem">
+                    <Heading as="h3" color="black" mt="1.5rem" fontSize="3.75rem">
                         $369
                     </Heading>
-                    <Text color="black" mt="1.5rem" textAlign="center">
+                    <Text color="black" mt="1.5rem">
                         billed just once
                     </Text>
-                    <Button fontSize="1rem" mt="1.5rem" textAlign="center" color="White" bg="#805AD5" w="17.625rem" h="3.1875rem" border="none" borderRadius="0.8125rem" _hover={{opacity: 0.75}}>
+                    <Button fontSize="1rem" mt="1.5rem" color="White" bg="#805AD5" w="17.625rem" h="3.1875rem" border="none" borderRadius="0.8125rem" _hover={{opacity: 0.75}}>
                         Get Started
                     </Button>
                 </Box>
