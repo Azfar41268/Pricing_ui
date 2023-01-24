@@ -14,7 +14,7 @@ export const ListItem= (props: StackProps) => {
 export default function Pricing() {
     return(
         <Box as="section" maxW="62.125rem" margin="auto" mt="-15.625rem" borderRadius="0.75rem" overflow="hidden" boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)">
-            <Flex bg="white" direction={["column", "column", "row"]}>
+            <Flex bg="white" direction={["column", "column", "row"]} textAlign="center">
                 <Box bg="#F0EAFB" p="3.75rem" textAlign="center">
                     <Text color="black" fontSize="1.5rem" fontWeight="extrabold">
                         Premium PRO
