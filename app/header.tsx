@@ -2,12 +2,12 @@ import { Box, Text, Heading } from "@chakra-ui/react"
 
 export default function Header() {
     return(
-        <Box pb="112px" as="section">
-            <Box color="#F7FAFC" bg="#6B46C1" w="1920px" h="397px"  >
-                <Heading margin="auto" position="absolute" textAlign="center" fontWeight="800" fontSize="48px" ml="620px" mt="88.45px" h="62.31px" w="751px" fontFamily="Inter">
+        <Box pb="7rem" as="section">
+            <Box color="gray.400" bg="#805AD5" pt="5.625rem" pb="12.375rem" px="2rem">
+                <Heading fontWeight="extrabold" fontSize={["30px", "30px", "48px"]} textAlign={["left", "left", "center"]}>
                 Simple pricing for your business
                 </Heading>
-                <Text margin="auto" position="absolute" textAlign="center" w="604px" h="32.16px" fontWeight="500" fontSize="24px" mt="166.24px" ml="690px" opacity="0.84" fontFamily="Inter">
+                <Text fontWeight="medium" fontSize={["18px", "18px", "24px"]} opacity="0.9" pt="1rem" textAlign={["left", "left", "center"]}>
                 Plans that are carefully crafted to suit your business.
                 </Text>
             </Box>

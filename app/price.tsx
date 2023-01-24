@@ -4,8 +4,8 @@ import {Icons} from "./icon"
 export const ListItem= (props: StackProps) => {
     const {children, ...rest} = props
     return(
-        <HStack as="li" spacing="20px" {...rest}>
-            <Icon as={Icons} w="22px" h="22px" />
+        <HStack as="li" spacing="1.25rem" {...rest}>
+            <Icon as={Icons} w="1.375rem" h="1.375rem" />
             <Text>{children}</Text>
         </HStack>
     )
@@ -13,27 +13,27 @@ export const ListItem= (props: StackProps) => {
 
 export default function Pricing() {
     return(
-        <Box mb="50px" maxW="994px" margin="auto" mt="-250px" borderRadius="12px" overflow="hidden" boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)">
-            <Flex bg="white">
-                <Box bg="#F0EAFB" p="60px">
-                    <Text color="black" textAlign="center" fontSize="24px" fontWeight="800">
+        <Box mb="3.125rem" maxW="62.125rem" margin="auto" mt="-15.625rem" borderRadius="0.75rem" overflow="hidden" boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)">
+            <Flex bg="white" direction={["column", "column", "row"]}>
+                <Box bg="#F0EAFB" p="3.75rem">
+                    <Text color="black" textAlign="center" fontSize="1.5rem" fontWeight="extrabold">
                         Premium PRO
                     </Text>
-                    <Heading color="black" mt="24px" textAlign="center" fontSize="60px" fontWeight="800" lineHeight="60px">
+                    <Heading color="black" mt="1.5rem" textAlign="center" fontSize="3.75rem" fontWeight="extrabold" lineHeight="3.75rem">
                         $369
                     </Heading>
-                    <Text color="black" mt="24px" textAlign="center">
+                    <Text color="black" mt="1.5rem" textAlign="center">
                         billed just once
                     </Text>
-                    <Button fontSize="16px" mt="24px" textAlign="center" color="White" bg="#805AD5" w="282px" h="51px" border="none" borderRadius="13px" _hover={{opacity: 0.75}}>
+                    <Button fontSize="1rem" mt="1.5rem" textAlign="center" color="White" bg="#805AD5" w="17.625rem" h="3.1875rem" border="none" borderRadius="0.8125rem" _hover={{opacity: 0.75}}>
                         Get Started
                     </Button>
                 </Box>
-                <Box  alignSelf="center" color="black" fontSize="18px" ml="70px" bg="white">
+                <Box  alignSelf="center" color="black" fontSize="1.125rem" ml="4.375rem" bg="white">
                     <Text>
                     Access these features when you get this pricing package for your business.
                     </Text>
-                    <Stack as="ul" spacing="20px" pt="24px">
+                    <Stack as="ul" spacing="1.25rem" pt="1.5rem">
                     <ListItem>International calling and messaging API</ListItem>
                     <ListItem>Additional phone numbers</ListItem>
                     <ListItem>Automated messages via Zapier</ListItem>
