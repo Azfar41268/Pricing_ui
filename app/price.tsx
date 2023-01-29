@@ -1,7 +1,7 @@
 import {Box, Text, Heading, Flex, Button, HStack, StackProps, Icon, Stack, } from "@chakra-ui/react"
 import {Icons} from "./icon"
 
-export const ListItem= (props: StackProps) => {
+export const ListItem = (props: StackProps) => {
     const {children, ...rest} = props
     return(
         <HStack as="li" spacing="1.25rem" {...rest} alignItems="start">
@@ -13,7 +13,7 @@ export const ListItem= (props: StackProps) => {
 
 export default function Pricing() {
     return(
-        <Box mx="24px">
+        <Box mx="24px" as="section">
             <Box textAlign="center" as="section" maxW="62.125rem" margin="auto" mt="-15.625rem" borderRadius="0.75rem" overflow="hidden" boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)">
                 <Flex bg="white" direction={["column", "column", "row"]}>
                     <Box bg="#F0EAFB" p="3.75rem">
@@ -30,7 +30,7 @@ export default function Pricing() {
                             Get Started
                         </Button>
                     </Box>
-                    <Box color="black" fontSize="1.125rem" bg="white" ml="30px" mt={["20px", "20px", "50px"]}>
+                    <Box color="black" fontSize="1.125rem" bg="white" ml="35px" mt={["30px", "30px", "65px"]}>
                         <Text textAlign="left">
                         Access these features when you get this pricing package for your business.
                         </Text>
